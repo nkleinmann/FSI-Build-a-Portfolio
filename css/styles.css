@@ -12,7 +12,7 @@
 /* block - Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width https://www.w3schools.com/cssref/pr_class_display.asp */
 
 /* could have also accessed the same image element by using [alt="Profile picture placeholder"] as a selector */
-[src] {
+img[src] {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
