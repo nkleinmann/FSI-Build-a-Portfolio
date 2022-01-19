@@ -1,13 +1,17 @@
-/* Universal Selector */
-
+/* Universal Selector - selects all HTML elements on the page */
 * {
     background-color: lightblue;
     cursor: url(../images/cursor.png), pointer;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
 }
 
+/* Reminder: use documentation, you are not expected to memorize all of this */
 
-/* Attribute Selector */
+/* Attribute Selector https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+/* https://www.w3schools.com/css/css_attribute_selectors.asp this is used to select elements with a specified value */
+/* block - Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width https://www.w3schools.com/cssref/pr_class_display.asp */
 
+/* could have also accessed the same image element by using [alt="Profile picture placeholder"] as a selector */
 [src] {
     display: block;
     margin: 0 auto;
@@ -16,16 +20,18 @@
 
 
 /* Element Selector */
+/* This selector modifies h1 and h2 elements (not nested) */
 
 h1,
 h2 {
     text-align: center;
 }
 
+/* This selector modifies the li element(s) inside of the ul element */
 ul li {
     font-size: 24px;
     color: rgb(139, 108, 113);
-    list-style: upper-roman inside;
+    list-style: upper-roman inside; 
     text-align: center;
 }
 
